@@ -28,7 +28,10 @@ lspconfig.pylsp.setup {
         jedi_references = {enabled = true},
         jedi_signature_help = {enabled = true},
         jedi_symbols = {enabled = true, all_scopes = true},
-        pycodestyle = {enabled = true},
+        pycodestyle = {
+          enabled = true,
+          maxLineLength = 88,
+        },
         flake8 = {
           enabled = true,
           ignore = {},
